@@ -54,6 +54,9 @@ remote:   https://github.com/YourOrg/YourRepo/pull/new/feature/my-new-feature
 If you receive feedback and need to make more commits, you just continue to commit and push to the same branch.
 The existing Pull Request will automatically update with the new commits and changes.
 
+*******
+
+
 ### Working on GitHub Issue
 
 The typical workflow for fixing a bug or implementing a feature tracked by a GitHub Issue is structured around the principle of isolating changes on a temporary branch before proposing them for review via a Pull Request (PR). This process ensures the main branch (main or master) remains stable and only contains approved, finished code.
@@ -92,6 +95,24 @@ git commit -m "fix: fixing a bug (logarithm of a negative value) based on issue 
 ```
 Clean Up History (*Optional*): If you have many small, messy commits, consider using interactive rebase (git rebase -i) to squash them into one clean, meaningful commit before pushing.
 
+**4. Pushing and Pull Request (PR) Submission** 
+
+
+Push the Branch: Upload your local branch and its history to the remote repository. The `-u` flag sets the upstream tracking branch for future pushes.
+
+```{bash}
+git push -u origin fix/42-negative-log
+```
+
+*Create the Pull Request (PR)*: After pushing, GitHub usually displays a yellow banner with a "Compare & pull request" button—click this to start the PR creation.
+
+*Link to the Issue*: In the PR description, use a closing keyword and the Issue number to automatically close the Issue when the PR is merged.
+
+Example closing keyword: **Closes #42** or **Fixes #42**.
+
+*Submit PR*: Set the base branch (e.g., main) and the head branch (your temporary branch), add a descriptive title, assign reviewers, and click Create pull request (or Create Draft pull request if it's not ready).
+
+*******
 
 ### Uncommitted changes
 
