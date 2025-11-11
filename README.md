@@ -13,6 +13,15 @@ to review the changes that have been done to the files (and has not been committ
 git diff
 ```
 
+To see the changes that you have already moved to the staging area (ready to be committed):
+```{bash}
+git diff --staged
+# or
+git diff --cached
+```
+
+
+
 If you are working in the **VSCode**, click the Git icon on the side bar and then click the name of the modified file
 you would like to review:
 
@@ -25,3 +34,5 @@ If you use **vim** as your code editor, you can set your difftool to use vim:
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
 ```
+
+
