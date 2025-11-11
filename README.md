@@ -54,6 +54,44 @@ remote:   https://github.com/YourOrg/YourRepo/pull/new/feature/my-new-feature
 If you receive feedback and need to make more commits, you just continue to commit and push to the same branch.
 The existing Pull Request will automatically update with the new commits and changes.
 
+### Working on GitHub Issue
+
+The typical workflow for fixing a bug or implementing a feature tracked by a GitHub Issue is structured around the principle of isolating changes on a temporary branch before proposing them for review via a Pull Request (PR). This process ensures the main branch (main or master) remains stable and only contains approved, finished code.
+
+**1. Sync Local Repository**: 
+
+Always start by ensuring your local copy of the main branch is up to date with the remote.
+
+
+```{bash}
+git checkout main
+git pull origin main
+```
+
+**2. Create Temporary Branch**: 
+
+Create a new local branch based on main. A best practice is to include the Issue number and a short description in the branch name.
+
+Example: For Issue #42, fixing a bug.
+
+```{bash}
+git checkout -b fix/42-negative-log
+```
+
+You can often click a "Create a branch" button directly on the GitHub Issue page. GitHub will suggest a branch name and automatically set it up for linking.
+
+
+**3. Work on the feature or fix locally**
+
+- Make Changes: Write code to address the problem described in the Issue.
+- Commit Changes: Stage your changes and create commits. It's often helpful to mention the Issue number in your commit message, especially the final one.
+
+```{bash}
+git add .
+git commit -m "fix: fixing a bug (logarithm of a negative value) based on issue #42"
+```
+Clean Up History (*Optional*): If you have many small, messy commits, consider using interactive rebase (git rebase -i) to squash them into one clean, meaningful commit before pushing.
+
 
 ### Uncommitted changes
 
