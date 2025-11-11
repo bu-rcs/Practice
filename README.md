@@ -20,6 +20,7 @@ git diff --staged
 git diff --cached
 ```
 
+*******
 
 
 If you are working in the **VSCode**, click the Git icon on the side bar and then click the name of the modified file
@@ -34,5 +35,5 @@ If you use **vim** as your code editor, you can set your difftool to use vim:
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
 ```
-
+*******
 
