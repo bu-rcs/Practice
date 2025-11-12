@@ -236,3 +236,11 @@ squash 5h6i7j8 Add documentation for feature
 2. *Git* will then combine the changes and immediately open the editor a second time. This time, it contains the combined messages of all the commits you marked as pick and squash.
 3. Delete the individual messages and write a single, clean, and descriptive commit message that summarizes all the changes being combined.
 4. Save and close this final editor file.
+
+
+*******
+### Running code in the Codespace
+
+Our organizational GitHub space allows running code in the codespace. The default configuration includes the latest versions of Python, R and other popular programming languages, but you can specify your own versions using the `devcontainer.json` file.
+
+Documentation: [https://docs.github.com/en/codespaces/quickstart]
