@@ -6,6 +6,12 @@ RCS Repository to practice Git commands and tools
 module load python3
 ```
 
+
+**Modern Branching Strategy**: Trunk-Based Development (TBD) 
+
+While GitFlow is often taught, Trunk-Based Development (TBD) is the modern standard for relatively small projects/teams.
+
+
 ### The Standard Pull Request Workflow
 A Pull Request is not a Git feature; it's a feature of *GitHub* (or other hosting services like GitLab/Bitbucket) that asks for a review and merge of one remote branch (your temporary branch) into another remote branch (usually main).
 
