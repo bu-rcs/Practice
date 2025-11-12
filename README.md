@@ -9,7 +9,7 @@ RCS Repository to practice Git commands and tools
 * [Working on GitHub Issue](#working-on-github-issue)
 * [Reviewing and Testing Pull Requests](#reviewing-and-testing-pull-requests)
 * [Uncommitted changes](#uncommitted-changes)
-* [Discarding Unstaged Changes in the Working Directory](#discarding-unstaged-changes-in- the-working-directory)
+* [Discarding Unstaged Changes in the Working Directory](#discarding-unstaged-changes-in-the-working-directory)
 * [Discarding Staged Changes in the Staging Area](#discarding-staged-changes-in-the-staging-area)
 * [Discarding Both Staged and Unstaged Changes](discarding-both-staged-and-unstaged-changes)
 * [Updating the last commit message or adding forgotten files](updating-the-last-commit-message-or-adding-forgotten-files)
