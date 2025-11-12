@@ -244,3 +244,6 @@ squash 5h6i7j8 Add documentation for feature
 Our organizational GitHub space allows running code in the codespace. The default configuration includes the latest versions of Python, R and other popular programming languages, but you can specify your own versions using the `devcontainer.json` file.
 
 Documentation: [https://docs.github.com/en/codespaces/quickstart]
+
+Codespace has the GitHub  Copilot built in.
+The default editor is VSCode, but you can chose JupyterLab. If you work on a codespace in VS Code, you can use Live Share to work collaboratively with other people on your team. By default, inactive codespaces are deleted after 30 days.
